@@ -7,7 +7,9 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack serve --mode=development --config config/webpack.dev.js",
-    "build": "webpack --mode=production --config config/webpack.prod.js"
+    "build": "webpack --mode=production --config config/webpack.prod.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "webpack",
@@ -21,6 +23,7 @@
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^6.2.1",
     "css-loader": "^5.0.0",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^4.5.0",
     "mini-css-extract-plugin": "^1.0.0",
     "node-sass": "^4.14.1",
@@ -37,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Swok-Kh/webpack5-template"
   },
   "dependencies": {}
 }
