@@ -2,7 +2,7 @@
 
     With two mode(production and development).
 
-    > Change _package.json_ before use
+    Change *package.json* before use
 
 ## Scripts
 
